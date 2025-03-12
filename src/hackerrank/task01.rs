@@ -16,6 +16,7 @@ fn simpleArraySum(ar: &[i32]) -> i32 {
     ar.iter().sum::<i32>()
 }
 
+
 fn main() {
     let stdin = io::stdin();
     let mut stdin_iterator = stdin.lock().lines();

@@ -7,6 +7,8 @@ use std::io::{self, BufRead, Write};
  *
  * The function is expected to return an INTEGER_ARRAY.
  * The function accepts INTEGER_ARRAY grades as parameter.
+ *
+ * https://www.hackerrank.com/challenges/grading/problem
  */
 
 fn gradingStudents(grades: &[i32]) -> Vec<i32> {

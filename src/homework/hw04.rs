@@ -1,7 +1,5 @@
-#[test]
-fn rhombus() {
-    const W: i32 = 11;
-    const W_HALF: i32 = W / 2;
+fn rhombus(W: i32) {
+    let W_HALF: i32 = W / 2;
 
     for y in 0..W {
         let step = (W_HALF - y).abs();
@@ -19,6 +17,12 @@ fn rhombus() {
     }
 }
 
+#[test]
+fn test_it() {
+    rhombus(11);
+    rhombus(3);
+}
+
 //OUTPUT
 // W = 11;
 //      *
@@ -32,3 +36,8 @@ fn rhombus() {
 //    *****
 //     ***
 //      *
+//
+// W = 3;
+//  *
+// ***
+//  *
